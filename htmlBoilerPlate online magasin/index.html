@@ -4,67 +4,72 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>HTML Boilerplate</title>
-	<meta name="author" content="Your Name">
-	<meta name="description" content="Example description">
+	<title>Den Kødfrie</title>
+	<meta name="Forfatter" content="Julie Pedersen">
+	<meta name="Beskrivelse" content="Den Kødfrie er en side der giver inspiration tl at levere en grønnere livstil">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- favicon = ikon i faneblad / browser -->
-	<link rel="icon" type="image/x-icon" href="images/smiley_32x32.png" />
+	<!-- ikon i faneblad -->
+	<link rel="icon" type="images/x-icon" href="images/icon.PNG" /
 </head>
 
 <body>
-
-	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
 	<div id="wrap">
 
-		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
 		<nav>
-			<!-- Menuer laves som regel i form af uordnede lister.
-					 Listerne kan styles så de går vandret eller lodret -->
+			<!--Liste med menupunkter -->
+			<div class="topnav">
 			<ul>
-				<li><a href="#"> Menu 1 </a></li>
-				<li>Menu 2</li>
-				<li>Menu 3</li>
+
+				<a href="pages/opskrifter.html"> Opskrifter</a>
+				<a href="#"> Bæredygtighed</a>
+				<a href="#"> Artikler</a>
+				<a href="#"> Om os </a>
+				<a href="#"> Søg </a>
+				<a href="#"> Log ind </a>
 			</ul>
-
+			<div class="topnav-centered">
 		</nav>
+		</div>
+		<a href="index.html">
+         <img src="images/logo.PNG" style="float:left"< width=100" height="100">
+      </a>
 
-		<header>
-			<!-- site navn plus evt tagline og logo -->
+	<!--Big photo -->	<img src="images/okra.jpg" alt="okra" width="100%" height="450px" class="center">
 
-			<!-- ofte reserveres h1 til site-navn -->
-			<h1> Websidens Navn </h1>
-		</header>
 
 		<!-- indhold -->
-		<main>
-			<!-- modul for en sektion -->
-			<section id="aaa">
-				<article>
-					<h2> h2 </h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-					</p>
-				</article>
-			</section>
-
 			<!-- modul: en ny sektion -->
 			<section id="bbb">
 				<article>
-					<h2> h2 </h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam facilis incidunt fuga doloribus unde labore quae magni ipsam deserunt odit, quidem est possimus omnis nisi ad nostrum vitae necessitatibus?
-					</p>
+					<h2> Populært </h2 class="h2">
+
+							<div class="row">
+									<div class="img-with-text">
+
+							  <div class="column">
+							    <img src="images/suppe.jpg" alt="Butternutsquash suppe"alt"sometext" style="width:100%">
+									<p>Butternutsquash suppe m. røde linser</p>
+							  </div>
+							  <div class="column">
+							    <img src="images/bns.jpg" alt="Forest" style="width:100%">
+							  </div>
+							  <div class="column">
+							    <img src="images/suppe.jpg" alt="Mountains" style="width:100%">
+							  </div>
+							</div>
+
+</div>
+
 
 				</article>
 			</section>
 		</main>
-
-		<!-- typisk kontaktinformationer -->
+</body>
+		<!-- kontaktinformationer -->
 		<footer>
-			&copy; Footer informationer her ..., 2021
+			Email: blabla <br>Tlf 3637633
 		</footer>
 
 	</div><!-- /wrap -->

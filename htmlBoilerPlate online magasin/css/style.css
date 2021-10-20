@@ -4,19 +4,147 @@
 /* Variabler: genbruges og gør designvalg enkle */
 :root {
   /* farver */
-  --blue: #1e90ff;
-  --white: #ffffff;
+  --green: #c8ecbe;
+  --white: #1a3b1b;
   /* fonte */
 }
 
-/* Her bruges en variabel: --blue */
+/* Her bruges en variabel: --green */
 body {
-  background-color: var(--blue);
+  background-color: var(--green);
+
+
+  /*Big photo*/
+
+.ceneter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 }
 
 /* Layout */
 
 /* Typografi */
 h2 {
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 4px solid var(--green);
+  --green:#5aa250;
+  text-align: center;
+  color: #5aa250;
+  font-size: 60px;
 }
+
+p {
+  font-family:Source Serif Pro;
+  color:#5aa250;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
+/*Billede indhold*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav{
+  width:90%;
+  height:60px;
+  background-color: #c8ecbe;
+}
+.img-with-text {
+    text-align: justify;
+    width:100%;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+/*Menubaren*/
+}
+
+.topnav {
+  font-family: Source Serif Pro;
+}
+
+
+}
+/*Farven på headeren */
+.topnav {
+  position: relative;
+  background-color: #c8ecbe;
+  overflow: auto ;
+}
+
+/* Linksne i navigationsbaren */
+.topnav a {
+  float: left;
+  color: #5aa250;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+nav{
+  width:100%;
+  height: 60%;
+}
+
+
+/* Farveskift i hover */
+.topnav a:hover {
+  background-color: #d8f2df;
+  color: green;
+}
+
+/* farven til det aktive link */
+.topnav a.active {
+  background-color: #1a3b1b;
+  color: green;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: left;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 100px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 10;
+    left: 10;
+    transform: none;
+  }
