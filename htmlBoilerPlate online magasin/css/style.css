@@ -8,47 +8,89 @@
   --white: #1a3b1b;
   /* fonte */
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Her bruges en variabel: --green */
 body {
   background-color: var(--green);
 
+}
 
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+/* Her bruges en variabel: --green */
+.logo {
+margin-right: 50px;
+
+}
   /*Big photo*/
 
-.ceneter{
+.bigphoto {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
+  width: 100%;
+  height: 5%;
+  border: 1px solid #fff;
+
 }
 
+svg{
+width: 50px;
+height: 150px;
+position: absolute;
+left: 80%;
+
+}
 /* Layout */
 
 /* Typografi */
-h2 {
+h2{
   border-bottom: 4px solid var(--green);
   --green:#5aa250;
   text-align: center;
   color: #5aa250;
-  font-size: 60px;
+  font-size: 40px;
+
 }
 
-p {
-  font-family:Source Serif Pro;
-  color:#5aa250;
-  font-size: 25px;
+
+/*links under billeder*/
+
+a {
+  color: #5aa250;
+  text-decoration: none;
+  font-size:25px;
   text-align: center;
+  font-family:Source Serif Pro;
+
+}
+/* unvisited link */
+a:link {
+  color: #5aa250;
 }
 
-
-
-/*Billede indhold*/
-
-* {
-  box-sizing: border-box;
+/* visited link */
+a:visited {
+  color:#2f7841;
 }
+
+/* mouse over link */
+a:hover {
+  color: #0f4514;
+}
+
+/* selected link */
+a:active {
+  color:#5aa250;
+}
+
+/*Billede indhold på forsiden*/
 
 .column {
   float: left;
@@ -62,14 +104,10 @@ p {
   clear: both;
   display: table;
 }
-nav{
-  width:90%;
-  height:60px;
-  background-color: #c8ecbe;
-}
 .img-with-text {
-    text-align: justify;
+    text-align: center;
     width:100%;
+    border: 1px solid #fff;
 }
 
 .img-with-text img {
@@ -102,10 +140,48 @@ nav{
   font-size: 20px;
 }
 
+.flex{
+  gap:50px;
+  display: flex;
+  align-items: center;
+}
 
 nav{
   width:100%;
   height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style-type: none;
+  display: block;
+}
+nav .menu>li{
+  padding-bottom: 20px;
+}
+nav .menu>li + li{
+  margin-left: 60px;
+}
+.dropdown{
+  position: relative;
+}
+.submenu{
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  background-color: #c8ecbe;
+  border: 1px solid #000;
+  width:110%;
+  text-align: center;
+
+}
+.dropdown:hover .submenu{
+  display: block;
 }
 
 
@@ -121,20 +197,6 @@ nav{
   color: green;
 }
 
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: left;
-}
-
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 100px) {
   .topnav a, .topnav-right {
@@ -148,3 +210,136 @@ nav{
     left: 10;
     transform: none;
   }
+
+  .kontakt{
+    font-family: Source Serif Pro;
+    color: green;
+  }
+  /*Her er footeren*/
+  footer{
+      background-color: #c8ecbe
+      width: 100%;
+      padding: 25px;
+      margin: 25px;
+      border-radius: 15px;
+  }
+
+
+/*Her begynder undersiden "panko"*/
+}
+#panko{
+
+}
+
+/*bigphoto*/
+.h1{
+  font-family:Source Serif Pro;
+  color:#5aa250;
+  text-align:center;
+  font-size: 50px;
+}
+
+div.opskrift{
+  display: block;
+  margin:0 auto;
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #fff;
+}
+
+/*ingredienser og Fremgangsmåde*/
+
+.p1{
+  font-family:Source Serif Pro;
+  color:#5aa250;
+  font-size: 30px;
+  padding-top: 3%;
+  width: 1500px;
+  text-align:center;
+}
+
+
+.h2{
+  font-family:Source Serif Pro;
+  color:#5aa250;
+  font-size: 20px;
+  padding-top: 3%;
+  width: 1500px;
+  text-align:center;
+}
+
+.p2{
+  font-family:Source Serif Pro;
+  color:#3f6c32;
+  font-size: 18px;
+  padding-top: 3%;
+  width: 1500px;
+  text-align:center;
+  line-height: 0.1%;
+}
+
+/*Her begynder undersiden "Den grønne udfording"*/
+}
+#dengronneudfordring{
+
+}
+
+.bigphoto2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;
+  height: 5%;
+  border: 1px solid #fff;
+}
+
+.dengronneudfordring{
+  font-family:Source Serif Pro;
+  color:#5aa250;
+  text-align:center;
+  font-size: 50px;
+}
+
+.tekst{
+  font-family:Source Serif Pro;
+  color:#3f6c32;
+  font-size: 15px;
+  width: 1000px;
+  text-align: center;
+  margin-left: 270px;
+ list-style-type: none;
+}
+
+.underoverskrift{
+  font-family:Source Serif Pro;
+  color:#5aa250;
+  font-size: 30px;
+  padding-top: 3%;
+  width: 1500px;
+  text-align:center;
+}
+
+/*Her begynder undersiden "artikel"*/
+}
+#artikel{
+
+}
+
+.tekst2{
+  font-family:Source Serif Pro;
+  color:#3f6c32;
+  font-size: 15px;
+  width: 700px;
+  text-align: center;
+  margin-left: 400px;
+}
+
+.bigphoto3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  height: 600px;
+  border: 1px solid #fff;
+
+}
